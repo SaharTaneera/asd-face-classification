@@ -142,8 +142,7 @@ python notebooks/adapted_cnn_experiments.py
 
 - `outputs/`  
   Stores generated plots, models, and result tables.
-```
-
+  
 ## Citation
 
 If you use this repository in your research, please cite:
