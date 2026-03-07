@@ -118,11 +118,11 @@ DATASET_DIR = "path_to_dataset_directory"
 python notebooks/compare_cnn_models.py
 ```
 you can also run
-
+```bash
 python notebooks/cross_validation_efficientnet.py
 python notebooks/classical_ml_and_cnn_experiments.py
 python notebooks/adapted_cnn_experiments.py
-
+```
 ## Repository Structure
 
 - `notebooks/adapted_cnn_experiments.py`  
