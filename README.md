@@ -101,16 +101,57 @@ The deep learning models were implemented using open-source frameworks including
 - Keras  
 
 ---
+## How to Run
+
+1. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+2. Update the dataset path inside the experiment scripts
+
+DATASET_DIR = "path_to_dataset_directory"
+
+3.Run one of the scripts
+
+```bash
+python notebooks/compare_cnn_models.py
+```
+you can also run
+
+python notebooks/cross_validation_efficientnet.py
+python notebooks/classical_ml_and_cnn_experiments.py
+python notebooks/adapted_cnn_experiments.py
+
+## Repository Structure
+
+- `notebooks/adapted_cnn_experiments.py`  
+  Cleaned single-model transfer learning experiment.
+
+- `notebooks/compare_cnn_models.py`  
+  Comparison of Xception, MobileNetV2, ResNet50, and EfficientNetB3.
+
+- `notebooks/cross_validation_efficientnet.py`  
+  5-fold cross-validation using EfficientNetB3.
+
+- `notebooks/classical_ml_and_cnn_experiments.py`  
+  Classical machine learning and CNN-based experiments.
+
+- `DATASET_NOTICE.md`  
+  Explains why the original dataset is not included.
+
+- `outputs/`  
+  Stores generated plots, models, and result tables.
+```
 
 ## Citation
 
-If you use this repository in your research, please cite the following paper:
+If you use this repository in your research, please cite:
 
 Taneera, S. N., Samadi, S., Özmen, S., & Alhajj, R. (2025).  
 *Game-Based Diagnosing of Children with Autism Spectrum Disorder.*  
-Journal of Information & Knowledge Management.
-
----
+Journal of Information & Knowledge Management.  
+DOI: 10.1142/S0219649225500479
 
 ## License
 
